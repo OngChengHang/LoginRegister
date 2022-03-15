@@ -58,20 +58,20 @@ public class Login extends AppCompatActivity {
                             progressBar.setVisibility(View.GONE);
                             String result = putData.getResult();
                             if(result.equals("Login Success")){
-                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(intent);
                                 finish();
                             }
                             else{
-                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
                             }
                         }
                     }
                 });
             }
             else{
-                Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_LONG).show();
             }
         });
     }
